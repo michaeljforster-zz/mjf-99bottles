@@ -8,46 +8,46 @@
 (in-package #:mjf-99bottles/test)
 
 (define-test test-the-first-verse
-  "99 bottles of beer on the wall, 99 bottles of beer.
+  (assert-equal "99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 "
-  (verse 99))
+                (verse 99)))
 
 (define-test test-another-verse
-  "89 bottles of beer on the wall, 89 bottles of beer.
+  (assert-equal "89 bottles of beer on the wall, 89 bottles of beer.
 Take one down and pass it around, 88 bottles of beer on the wall.
 "
-  (verse 89))
+                (verse 89)))
 
 (define-test test-verse-2
-  "2 bottles of beer on the wall, 2 bottles of beer.
+  (assert-equal "2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 "
-  (verse 2))
+                (verse 2)))
 
 (define-test test-verse-1
-  "1 bottle of beer on the wall, 1 bottle of beer.
+  (assert-equal "1 bottle of beer on the wall, 1 bottle of beer.
 Take it down and pass it around, no more bottles of beer on the wall.
 "
-  (verse 1))
+                (verse 1)))
 
 (define-test test-verse-0
-  "No more bottles of beer on the wall, no more bottles of beer.
+  (assert-equal "No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 "
-  (verse 0))
+                (verse 0)))
 
 (define-test test-a-couple-verses
-  "99 bottles of beer on the wall, 99 bottles of beer.
+  (assert-equal "99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
 Take one down and pass it around, 97 bottles of beer on the wall.
 "
-  (verses 99 98))
+                (verses 99 98)))
 
 (define-test test-a-few-verses
-  "2 bottles of beer on the wall, 2 bottles of beer.
+  (assert-equal "2 bottles of beer on the wall, 2 bottles of beer.
 Take one down and pass it around, 1 bottle of beer on the wall.
 
 1 bottle of beer on the wall, 1 bottle of beer.
@@ -56,10 +56,10 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 "
-  (verses 2 0))
+                (verses 2 0)))
 
 (define-test test-the-whole-song
-  "99 bottles of beer on the wall, 99 bottles of beer.
+  (assert-equal "99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
 
 98 bottles of beer on the wall, 98 bottles of beer.
@@ -359,4 +359,4 @@ Take it down and pass it around, no more bottles of beer on the wall.
 No more bottles of beer on the wall, no more bottles of beer.
 Go to the store and buy some more, 99 bottles of beer on the wall.
 "
-  (song))
+                (song)))
