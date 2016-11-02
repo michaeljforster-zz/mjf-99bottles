@@ -1,7 +1,7 @@
 #mjf-99bottles
 
 Common Lisp version of Sandi Metz and Katrina Owen's
-(99bottles)[http://www.sandimetz.com/99bottles]
+[99bottles](http://www.sandimetz.com/99bottles)
 
 mjf-99bottles is not available for download via quicklisp. Instead,
 clone the repository, tell ASDF where to find the system definition,
