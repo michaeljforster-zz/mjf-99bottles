@@ -1,6 +1,7 @@
 ;;;; core.lisp
 
 (defpackage #:mjf-99bottles/core
+  (:nicknames #:mjf-99bottles)
   (:use #:cl)
   (:export #:jello))
 
