@@ -1,23 +1,27 @@
-#mjf-99bottles
+#MJF-99BOTTLES
 
 Common Lisp version of Sandi Metz and Katrina Owen's
 [99bottles](http://www.sandimetz.com/99bottles)
 
-mjf-99bottles is not available for download via quicklisp. Instead,
+MJF-99BOTTLES is written in portable Common Lisp but
+requires [ASDF](https://common-lisp.net/project/asdf/) 3.1 or later to
+build.
+
+MJF-99BOTTLES is not available for download via Quicklisp. Instead,
 clone the repository, tell ASDF where to find the system definition,
-and load the system with quicklisp:
+and load the system:
 
 ```lisp
-(ql:quicklisp "mjf-99bottles/core")
+(asdf:operate 'asdf:load-op "mjf-99bottles")
 ```
 
 Following that, the associated test package can be loaded and run
 with ASDF:
 
 ```lisp
-(asdf:operate 'asdf:test-op "mjf-99bottles/test")
+(asdf:operate 'asdf:test-op "mjf-99bottles")
 ```
 
 License
 
-mjf-99bottles is distributed under the MIT license. See LICENSE.
+MJF-99BOTTLES is distributed under the MIT license. See LICENSE.
