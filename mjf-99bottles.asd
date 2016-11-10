@@ -15,7 +15,7 @@
 (asdf:defsystem "mjf-99bottles/test"
   :depends-on ("mjf-99bottles/test")
   :perform (test-op (o c)
-                    (uiop:symbol-call :lisp-unit
-                                      :run-tests
+                    (uiop:symbol-call "LISP-UNIT"
+                                      "RUN-TESTS"
                                       :all
-                                      :mjf-99bottles/test)))
+                                      "MJF-99BOTTLES/TEST")))

@@ -1,11 +1,11 @@
 ;;;; test.lisp
 
-(defpackage #:mjf-99bottles/test
-  (:use #:cl
-        #:lisp-unit
-        #:mjf-99bottles/core))
+(defpackage "MJF-99BOTTLES/TEST"
+  (:use "CL"
+        "LISP-UNIT"
+        "MJF-99BOTTLES/CORE"))
 
-(in-package #:mjf-99bottles/test)
+(in-package "MJF-99BOTTLES/TEST")
 
 (define-test test-the-first-verse
   (assert-equal "99 bottles of beer on the wall, 99 bottles of beer.

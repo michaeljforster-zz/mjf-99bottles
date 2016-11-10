@@ -1,13 +1,13 @@
 ;;;; core.lisp
 
-(defpackage #:mjf-99bottles/core
-  (:nicknames #:mjf-99bottles)
-  (:use #:cl)
-  (:export #:verse
-           #:verses
-           #:song))
+(defpackage "MJF-99BOTTLES/CORE"
+  (:nicknames "MJF-99BOTTLES")
+  (:use "CL")
+  (:export "VERSE"
+           "VERSES"
+           "SONG"))
 
-(in-package #:mjf-99bottles/core)
+(in-package "MJF-99BOTTLES/CORE")
 
 (defun verse (n)
   (case n
